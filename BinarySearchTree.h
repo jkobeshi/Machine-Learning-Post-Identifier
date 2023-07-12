@@ -319,21 +319,21 @@ template <typename T,
 
 
         // ---------- DO NOT CHANGE ANYTHING IN THIS FILE ABOVE THIS LINE ----------
-        void order_leaves_descending(const Node* root, vector<int>& vec) {
-            if (node->right == nullptr && node->left == nullptr) {
-                vec.push_back(node->datum);
-            }
-            else if (node->left == nullptr && node->right != nullptr) {
-                order_leaves_descending(node->right, vec);
-            }
-            else if (node->right == nullptr && node->left != nullptr) {
-                order_leaves_descending(node->left, vec);
-            }
-            else {
-                order_leaves_descending(node->right, vec);
-                order_leaves_descending(node->left, vec);
-            }
-        }
+        // void order_leaves_descending(const Node* root, vector<int>& vec) {
+        //     if (node->right == nullptr && node->left == nullptr) {
+        //         vec.push_back(node->datum);
+        //     }
+        //     else if (node->left == nullptr && node->right != nullptr) {
+        //         order_leaves_descending(node->right, vec);
+        //     }
+        //     else if (node->right == nullptr && node->left != nullptr) {
+        //         order_leaves_descending(node->left, vec);
+        //     }
+        //     else {
+        //         order_leaves_descending(node->right, vec);
+        //         order_leaves_descending(node->left, vec);
+        //     }
+        // }
 
           // TREE IMPLEMENTATION FUNCTIONS
           // You must write an implementation for each of these static member
